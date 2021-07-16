@@ -1,16 +1,23 @@
 # 🐍🤖 Robo Advisor for Retirement Plans 💰🐍
 
 ## Purpose
-Improve customer experience for a prominent retirement plan provider with a robo advisor that could be used by customers or potential customers to get investment portfolio recommendations for retirement.
+Improve customer experience for a prominent retirement plan provider with a robo advisor that could be used by customers or potential customers to get investment portfolio recommendations for retirement based on user input:
+* Name
+* Age
+* Investment amount
+* Preferred risk level
 
 ## Technology
 * AWS Lex bot
 * AWS Lambda function (Python 3.7)
 
+## Demonstration
 ![Bot Demonstration](RoboAdvisor/bot.gif)
 
-## Method
+## Functionality
 Validate input from user
+* Age below 65
+* Investment amount about $5000
 ```
 def validate_data(age, investment_amount, intent_request):
     # Validate that the user is between 0 - 65 yrs old
